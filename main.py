@@ -1,9 +1,14 @@
 from fastapi import FastAPI
+import codecs
 
-# Создаем экземпляр приложения
+
 app = FastAPI()
+text = "hello,world"
+print(text)
 
-# Определяем корневой маршрут
-@app.get("/00")
+'''
+@app.get("/")
 def read_root():
-    return {"message": "Hello World"}
+     return codecs.encode(this.s, "rot_13")
+'''
+#print("this")
